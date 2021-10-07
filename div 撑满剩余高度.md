@@ -2,7 +2,7 @@
 
 ### 实现的效果
 
-![效果图](/assets/flex.jpeg)
+![实现效果图](/assets/flex.jpeg)
 
 ```html
 <div className="main">
