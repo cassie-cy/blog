@@ -73,7 +73,7 @@
 
 #### 2. 顶部 nav 高度不固定
 
-方法一：使用 flex 布局
+方法一：使用 flex 布局(推荐)
 
 ```css
 .main {
@@ -86,6 +86,31 @@
   }
   .content {
     flex: 1;
+  }
+}
+```
+
+当需要多层 div 嵌套撑开父容器时，flex 可嵌套使用。
+
+![实现效果图](/assets/flex2.jpeg)
+
+```css
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .nav {
+    width: 100%;
+  }
+  .content {
+    flex: 1;
+    .nav2 {
+      width: 100%;
+    }
+    .innerContent {
+      flex: 1;
+    }
   }
 }
 ```
