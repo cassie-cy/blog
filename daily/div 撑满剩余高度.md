@@ -83,6 +83,7 @@
   flex-direction: column;
   .nav {
     width: 100%;
+    flex: none; // 避免高度不够时被压缩
   }
   .content {
     flex: 1;
